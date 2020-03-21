@@ -1,3 +1,5 @@
+# Approximate Manifold Defense Against Multiple Adversarial Perturbations
+
 A shorter version of this paper has been accepted in [NeurIPS-2019 Workshop on Machine Learning with Guarantees](https://drive.google.com/file/d/1I2WKHg-s7wJgG21apg3FhxaYzzFl4vgt/view) and the full version 
 Link to be added. (Full paper, IJCNN 2020)
 
@@ -16,7 +18,7 @@ We have already provide the trained RBF layer used for our model in `./layer_cif
 The code for rCNN+ is provided here. Execute `train_cnn_cifar.py` and `train_cnn_mnist.py` for CIFAR-10 and MNIST respectively.
 To train the rCNN models, remove the data augmentation during training. 
 
-Please note that, our RBF-CNN models become robust once it achieves ~100% accuracy on training data.
+Please note that, our RBF-CNN models become robust once it achieves `~100% training accuracy`.
 Weights for the trained models are provided in `./trained_weights/`.
 
 ## Testing
