@@ -6,7 +6,7 @@ Link to be added. (Full paper, IJCNN 2020)
 In this work, we propose RBF-CNN, an approximate manifold-based defense framework against adversarial attacks for image classification. Unlike previous approaches, we demonstrate that our manifold based defense model is scalable to complex data manifold of natural images. 
 
 To the best of our knowledge, RBF-CNN is the first generative model-based defense framework to achieve robustness for any Lp perturbations along with offering the flexibility of allowing for the trade-off adjustment of robustness vs accuracy at deployment.
-Experiments on MNIST and CIFAR-10 have shown that our model achieves robustness any minor adversarial perturbations w.r.t L1, L2 and Linf norms.
+Our experiments on MNIST and CIFAR-10 demonstrate that RBF-CNN models provide robustness any minor adversarial perturbations w.r.t L1, L2, and Linf norms. Further, we have applied the certification technique proposed for [randomized smoothing](https://arxiv.org/abs/1902.02918) to demonstrate that our RBF-CNN models also attain provable robustness for L2 norms.
 
 In this repository, we provide the training code for our defense model. The training of RBF-CNN is a two-step process:
 
