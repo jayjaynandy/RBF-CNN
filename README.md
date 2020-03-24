@@ -23,3 +23,16 @@ Weights for the trained models are provided in `./trained_weights/`.
 
 ## Testing
 Please follow the code: `test_cifar.py` and `test_mnist.py`
+
+## Citation
+
+If our code or our results are useful in your reasearch, please consider citing:
+
+```[bibtex]
+@inproceedings{rbfcnn_ijcnn20,
+  author={Jay Nandy and Wynne Hsu and Mong{-}Li Lee},
+  title={Approximate Manifold Defense Against Multiple Adversarial Perturbations},
+  booktitle={International Joint Conference on Neural Networks (IJCNN)},
+  year={2020},
+}
+```
