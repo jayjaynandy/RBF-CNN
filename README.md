@@ -1,6 +1,8 @@
 # Approximate Manifold Defense Against Multiple Adversarial Perturbations
 
-A shorter version of this paper has been accepted in [NeurIPS 2019 Workshop on Machine Learning with Guarantees](https://sites.google.com/view/mlwithguarantees/accepted-papers)[pdf](https://drive.google.com/file/d/1I2WKHg-s7wJgG21apg3FhxaYzzFl4vgt/view), [poster](https://drive.google.com/file/d/1Wp-kKsc0927ZXo5lS8f2GPnmSpIWdRlN/view) and the full version 
+A shorter version of this paper has been accepted in [NeurIPS 2019 Workshop on Machine Learning with Guarantees](https://sites.google.com/view/mlwithguarantees/accepted-papers) 
+[pdf](https://drive.google.com/file/d/1I2WKHg-s7wJgG21apg3FhxaYzzFl4vgt/view), 
+[poster](https://drive.google.com/file/d/1Wp-kKsc0927ZXo5lS8f2GPnmSpIWdRlN/view) and the full version 
 Link to be added. (Full paper, IJCNN 2020)
 
 In this work, we propose RBF-CNN, an approximate manifold-based defense framework against adversarial attacks for image classification. Unlike previous approaches, we demonstrate that our manifold based defense model is scalable to complex data manifold of natural images. 
