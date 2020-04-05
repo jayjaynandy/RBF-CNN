@@ -1,0 +1,1 @@
+{"memThreshold": 0.001, "outChannel": 232, "outSize": 30, "layerNum": 0, "stride": 1, "filterSize": 3, "layerDir": "layer\\", "inSize": 32, "alpha": 1.0, "inChannel": 3}
