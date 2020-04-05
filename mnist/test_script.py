@@ -160,5 +160,5 @@ if __name__ == '__main__':
     test_labels = dataList['y_test']
     
     '''
-    adv_path = './adv_images/'    
+    adv_path = './adv_images/adv.npz'  # example path
     get_attack_acc(adv_path)
