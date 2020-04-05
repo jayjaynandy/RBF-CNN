@@ -148,7 +148,8 @@ if __name__ == '__main__':
     classModelList = []
     for i in range(iter):
         print(i)
-        classModelList.append(get_classmodel(data, './models/mnist-gsn-noise', './layer/'+data_name+'/'))
+        classModelList.append(get_classmodel(data, './trained_models/rCNN', 
+                                             './rbf_layer/'))
     
     # clean test accuracy
     get_normal_acc()
