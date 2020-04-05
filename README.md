@@ -15,11 +15,16 @@ Execute train_rbfLayer.py (`required library: numba`). We have already provide o
 
 ## Step 2: Training of the CNN network in presence of the trainined RBF layer
 CNN model can be trained only after training the RBF layer.
+
 To train rCNN model, execute: `train_rCNN.py`.
+
 To train rCNN+ model, execute: `train_rCNN+.py`.
+
 
 Please note that, our RBF-CNN models become robust once it achieves `~100% training accuracy`.
 Weights for the trained models are provided in `./trained_weights/`.
+
+Link for trained models and additional files will be provided soon!
 
 ## Testing
 Please follow the code: `test_script.py`.
