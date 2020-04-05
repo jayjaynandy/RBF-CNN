@@ -10,19 +10,19 @@ Our experiments on MNIST and CIFAR-10 demonstrate that RBF-CNN models provide ro
 
 In this repository, we provide the training code for our defense model. The training of RBF-CNN is a two-step process:
 
-## Training of the RBF layer using non-parametric EM algorithm
-Execute train_rbf_cifar.py and train_rbf_mnist.py for CIFAR-10 and MNIST respectively (`required library: numba`).
-We have already provide the trained RBF layer used for our model in `./layer_cifar/` and `./layer_mnist/` respectively.
+## Step 1: Training of the RBF layer
+Execute train_rbfLayer.py (`required library: numba`). We have already provide one copy of the trained RBF layer used for our model in `./rbf_layer/`.
 
-## Training of the CNN network in presence of the trainined RBF layer
-The code for rCNN+ is provided here. Execute `train_cnn_cifar.py` and `train_cnn_mnist.py` for CIFAR-10 and MNIST respectively.
-To train the rCNN models, remove the data augmentation during training. 
+## Step 2: Training of the CNN network in presence of the trainined RBF layer
+CNN model can be trained only after training the RBF layer.
+To train rCNN model, execute: `train_rCNN.py`.
+To train rCNN+ model, execute: `train_rCNN+.py`.
 
 Please note that, our RBF-CNN models become robust once it achieves `~100% training accuracy`.
 Weights for the trained models are provided in `./trained_weights/`.
 
 ## Testing
-Please follow the code: `test_cifar.py` and `test_mnist.py`
+Please follow the code: `test_script.py`.
 
 ## Citation
 
