@@ -1,0 +1,1 @@
+{"memThreshold": 0.001, "outChannel": 24, "outSize": 26, "layerNum": 0, "stride": 1, "filterSize": 3, "layerDir": "layer\\mnist-recover\\", "inSize": 28, "alpha": 1.0, "inChannel": 1}
