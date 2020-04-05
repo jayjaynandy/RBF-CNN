@@ -7,7 +7,7 @@ from keras.utils import get_custom_objects
 import os
 os.environ['PYTHONHASHSEED'] = '0'
 tf.set_random_seed(1234)
-np.random.seed(9955)     #9955
+np.random.seed(9955)
 
 
 '''Loading the RBF filter weights.'''
