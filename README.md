@@ -26,8 +26,6 @@ To train rCNN+ model, execute: `train_rCNN+.py`.
 Please note that, our RBF-CNN models become robust once it achieves `~100% training accuracy`.
 Weights for the trained models are provided in `./trained_weights/`.
 
-Link for trained models and additional files will be provided soon!
-
 ## Testing
 Please follow the code: `test_script.py`.
 
