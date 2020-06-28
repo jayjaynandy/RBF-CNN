@@ -178,8 +178,7 @@ class cifar10vgg:
         reduce_lr = keras.callbacks.LearningRateScheduler(lr_scheduler)
 
         #data augmentation
-        datagen = ImageDataGenerator(rotation_range=0, width_shift_range=0.00, height_shift_range=0.0, 
-                                     horizontal_flip=True)
+        datagen = ImageDataGenerator(horizontal_flip=True)
         datagen.fit(data.train_data)
 
         model_checkpoint= keras.callbacks.ModelCheckpoint(
