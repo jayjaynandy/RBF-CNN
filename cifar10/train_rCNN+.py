@@ -177,10 +177,7 @@ class cifar10vgg:
         reduce_lr = keras.callbacks.LearningRateScheduler(lr_scheduler)
 
 
-        datagen = ImageDataGenerator(rotation_range=15, 
-                                     width_shift_range=0.15, 
-                                     height_shift_range=0.15, 
-                                     horizontal_flip=True)
+        datagen = ImageDataGenerator(horizontal_flip=True)
         datagen.fit(data.train_data)
 
         model_checkpoint= keras.callbacks.ModelCheckpoint(
@@ -197,10 +194,7 @@ class cifar10vgg:
         model.compile(loss=fn, optimizer=sgd, metrics=['accuracy'])
 
 
-        diffgen1 = ImageDataGenerator(rotation_range=15, 
-                                      width_shift_range=0.15, 
-                                      height_shift_range=0.15, 
-                                      horizontal_flip=True)
+        diffgen1 = ImageDataGenerator(horizontal_flip=True)
         
         ''' 
         Ideally, we should train the model for few epochs (~ 50) and 
