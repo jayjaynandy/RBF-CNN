@@ -61,7 +61,12 @@ def runner(config, data, batch_size, loadTrue= True, totalIter = 550, nonParamMo
                     config['outChannel']=nodeMean.shape[0]
                     writeConfig(config)
                     writeModel(config, nodeMean, nodeCov)
-                
+                    
+                    ''' Visualize rbf means'''
+                    Utils.imwrite(Utils.immerge(nodeMean, 
+                                                np.floor(np.sqrt(nodeMean.shape[0])).astype(int)+1, 
+                                                np.floor(np.sqrt(nodeMean.shape[0])).astype(int)+1), 
+                                                'rbf_mean'+str(updateCount)+'.png')                
             if updateCount > nonParamMode:
                 Local.updateMode = 2
             if updateCount > totalIter:
