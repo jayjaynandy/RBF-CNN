@@ -32,4 +32,4 @@ if __name__ == '__main__':
     Utils.imwrite(Utils.immerge(nodeMean, 
                                 np.floor(np.sqrt(nodeMean.shape[0])).astype(int)+1, 
                                 np.floor(np.sqrt(nodeMean.shape[0])).astype(int)+1), 
-                                'mnistFashion3x3.png')
+                                'mnist_mean_final.png')
