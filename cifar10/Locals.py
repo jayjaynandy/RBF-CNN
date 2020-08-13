@@ -1,11 +1,9 @@
-''' 
-No need to change these values. 
-These values will be updated as we execute the code
-'''
-epoch = 0
+epoch = 1500
 nodeCount = 0
-updateMode = 0
-batchCount = 0
+updateMode = 0                      
+batchCount = 15                   
 desiredNodeCount = 175.0
 alpha = 1.0
+
 memberThreshold = 0.001
+countThreshold = 1
