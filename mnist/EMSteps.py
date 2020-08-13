@@ -1,6 +1,6 @@
 import numpy as np
 from numba import guvectorize, float64, int64
-#import Globals
+import Local
 
 
 def EStep(config, updateMode, batch, nodeMean, nodeCov, 
@@ -10,8 +10,8 @@ def EStep(config, updateMode, batch, nodeMean, nodeCov,
     step = config['stride']
     batchSize = batch.shape[0]
     inRow = batch.shape[1]
-    outChannel = nodeMean.shape[0]
-    outRow = (inRow-fSize)/step+1
+    outChannel = int(nodeMean.shape[0])
+    outRow = int((inRow-fSize)/step+1)
 
     outBatch = np.zeros((batchSize,inRow,inRow,outChannel)).astype(np.float64)
     outBatch = euclideanDist(batch, nodeMean, step, outBatch)
@@ -45,8 +45,8 @@ def euclideanDist(batch, nodeMean, step, outBatch):
         for f in range(0, nodeMean.shape[0]):                                   # each filter
             for r in range(0, batch.shape[1]-nodeMean.shape[1]+1, step[0]):     # starting row of img
                 for c in range(0, batch.shape[2]-nodeMean.shape[2]+1, step[0]): # starting col of img
-                    outR = r/step[0]
-                    outC = c/step[0]
+                    outR = int(r/step[0])
+                    outC = int(c/step[0])
                     for w in range(0,nodeMean.shape[1]):                        # iterate over filter/img row
                         for h in range(0,nodeMean.shape[2]):                    # iterate over filter/img col
                             for d in range(0,batch.shape[3]):                   # iterate over filter/img channel
@@ -93,8 +93,8 @@ def updateStats(batch, step, updateMode, nodeMean, outBatch, statMean, statDigCo
     for b in range(0, batch.shape[0]):                                          # each image
         for r in range(0, batch.shape[1]-nodeMean.shape[1]+1, step[0]):            # starting row of img
             for c in range(0, batch.shape[2]-nodeMean.shape[1]+1, step[0]):        # starting col of img
-                outR = r/step[0]
-                outC = c/step[0]
+                outR = int(r/step[0])
+                outC = int(c/step[0])
                 f = np.argmax(outBatch[b,outR,outC,:])
                 clusterCount[f] +=1
                 
