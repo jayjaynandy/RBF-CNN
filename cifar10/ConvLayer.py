@@ -3,7 +3,7 @@ import numpy as np
 import json
 
 import Locals
-import EMSteps
+import EMSteps, Utils
 
 def loadPretrained(config):
     
@@ -62,6 +62,10 @@ def runner(config, data, batch_size, loadTrue= True, totalIter = 550, nonParamMo
                     config['outChannel']=nodeMean.shape[0]
                     writeConfig(config)
                     writeModel(config, nodeMean, nodeCov)
+
+                    Utils.imwrite(Utils.immerge(nodeMean, np.floor(np.sqrt(nodeMean.shape[0])).astype(int)+1, 
+                                                np.floor(np.sqrt(nodeMean.shape[0])).astype(int)+1), 
+                                                config['layerDir']+ 'rbf_mean'+str(updateCount)+'.png')                    
                 
             if updateCount > nonParamMode:
                 Locals.updateMode = 2
