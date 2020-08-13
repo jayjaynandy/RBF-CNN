@@ -1,5 +1,5 @@
 import numpy as np
-import scipy
+from imageio import imsave
 
 #%%
 def to_range(images, min_value=0.0, max_value=1.0, dtype=None):
@@ -20,7 +20,7 @@ def imwrite(image, path):
     if image.ndim == 3 and image.shape[2] == 1:  # for gray image
         image = np.array(image, copy=True)
         image.shape = image.shape[0:2]
-    return scipy.misc.imsave(path, to_range(image, 0, 255, np.uint8))
+    return imsave(path, to_range(image, 0, 255, np.uint8))
 
 #%%
 def immerge(images, row, col):
