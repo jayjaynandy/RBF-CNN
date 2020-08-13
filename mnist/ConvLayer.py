@@ -64,7 +64,7 @@ def runner(config, data, batch_size, loadTrue= True, totalIter = 550, nonParamMo
                     Utils.imwrite(Utils.immerge(nodeMean, 
                                                 np.floor(np.sqrt(nodeMean.shape[0])).astype(int)+1, 
                                                 np.floor(np.sqrt(nodeMean.shape[0])).astype(int)+1), 
-                                                'rbf_mean'+str(updateCount)+'.png')                    
+                                                config['layerDir']+'rbf_mean'+str(updateCount)+'.png')                    
                 
             if updateCount > nonParamMode:
                 Local.updateMode = 2
