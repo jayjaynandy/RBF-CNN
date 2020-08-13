@@ -4,7 +4,7 @@ import Utils
 
 layerNum = 0
 config = {
-          'layerDir':dir+"./rbf_layer/",
+          'layerDir':"./rbf_layer/",
           'alpha':1.0,
           'memThreshold':0.001
           }
@@ -30,4 +30,4 @@ if __name__ == '__main__':
     Utils.imwrite(Utils.immerge(nodeMean, 
                                 np.floor(np.sqrt(nodeMean.shape[0])).astype(int)+1, 
                                 np.floor(np.sqrt(nodeMean.shape[0])).astype(int)+1), 
-                                'cifar.png')
+                                'rbf_mean_final.png')
