@@ -4,6 +4,7 @@ A shorter version of this paper has been accepted in [NeurIPS 2019 Workshop on M
 [[pdf]](https://drive.google.com/file/d/1I2WKHg-s7wJgG21apg3FhxaYzzFl4vgt/view), 
 [[poster]](https://drive.google.com/file/d/1Wp-kKsc0927ZXo5lS8f2GPnmSpIWdRlN/view) and the full version of this paper is accepted at IJCNN-2020 [[Arxiv Link]](https://arxiv.org/abs/2004.02183).
 The video presentation of our paper is provided in this [youtube link](https://www.youtube.com/watch?v=oKBu90fuTgI).
+An updated version that removes numba dependency to train the RBF layer can be founc [here](https://github.com/jayjaynandy/RBF_CNN-v2).
 
 In this work, we propose RBF-CNN, an approximate manifold-based defense framework against adversarial attacks for image classification. Unlike previous approaches, we demonstrate that our manifold based defense model is scalable to complex data manifold of natural images. 
 
